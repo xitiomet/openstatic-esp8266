@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title><%=hostname%></title>
+    <script type="text/javascript" src="index.js"></script>
+    <style type="text/css">
+      body { background-color: white; font-family: Arial, Helvetica, Sans-Serif; Color: #000088; margin: 0px 0px 0px 0px; }
+    </style>
+  </head>
+  <body onload="dataRefresh()">
+    <div style="display: block; background-color: black; color: white; margin: 0px 0px 0px 0px; padding: 2px 2px 2px 2px; width: 100%;">
+        <table style="width: 99%; border: none; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;" cellspacing="0" cellpadding="0">
+            <tr>
+                <td align="left"><span style="font-size: 22px; color: white;"><%=hostname%></span></td>
+                <td align="right"><span id="clock" style="color: white; padding-right: 5px;"></span> <input type="button" value="settings" onclick="window.location='/setup.html';" /></td>
+            </tr>
+        </table>
+    </div>
+    <div style="padding: 2px 2px 2px 2px;" id="table_display"></div>
+  </body>
+</html>
